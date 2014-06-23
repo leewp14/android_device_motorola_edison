@@ -48,3 +48,5 @@ TARGET_USES_CUSTOM_INITFILES := true
 # Specific recovery settings
 TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/fstab.mapphone_umts
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard0
