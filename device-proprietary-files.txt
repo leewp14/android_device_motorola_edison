@@ -77,4 +77,3 @@ lib/libusb.so
 # system/usr
 usr/bin/gki_pd_notifier
 usr/bin/panic_daemon
-usr/keylayout/atmxt-i2c.kl
