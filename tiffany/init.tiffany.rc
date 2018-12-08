@@ -1,12 +1,20 @@
 # This file will be referred in init.mapphone.rc
 #
 
+service initswap /system/bin/logwrapper /system/bin/sh /tiffany/sh/initswap.sh
+    class core
+    user root
+    oneshot
+
 on fs
     swapon_all /fstab.mapphone_umts
     
     # zRAM Configuration
     write /proc/sys/vm/swappiness 90
     write /proc/sys/vm/page-cluster 0
+
+on post-fs
+    start initswap
 
 on post-fs-data
 
