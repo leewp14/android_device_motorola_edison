@@ -1,4 +1,7 @@
 # This file will be referred in init.mapphone.rc
 #
 
+on fs
+    swapon_all /fstab.mapphone_umts
+
 
