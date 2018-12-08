@@ -8,3 +8,11 @@ on fs
     write /proc/sys/vm/swappiness 90
     write /proc/sys/vm/page-cluster 0
 
+on post-fs-data
+
+    # Enable cpu notify on migrate for CM PowerHAL
+    chown system system /dev/cpuctl/cpu.notify_on_migrate
+    chmod 0664 /dev/cpuctl/cpu.notify_on_migrate
+    write /dev/cpuctl/cpu.notify_on_migrate 1
+
+
