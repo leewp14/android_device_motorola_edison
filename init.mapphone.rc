@@ -1,3 +1,24 @@
+# Some sections will be removed by BMM on boot as safety measures;
+# We know what we are doing, so we are going to break the barrier :)
+# *refer /system/etc/bmm/script/boot.sh in System 1
+# 
+# These sections will BE REMOVED by BMM : [init.rc] [init.mapphone_*.rc]
+# - on fs
+# - on fs-end
+# - on post-fs
+# - write /sys/module/android/parameters/cdrom 0
+# - write /sys/module/android/parameters/cdrom 1
+# - on property:dev.bootcomplete=1
+#       write /sys/class/leds/red/brightness 0
+#       write /sys/class/leds/green/brightness 0
+#       write /sys/class/leds/green/brightness 1
+# 
+
+import /init.tiffany.rc
+
+# 
+
+
 on init
 
 loglevel 3
