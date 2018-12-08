@@ -30,7 +30,6 @@ loglevel 3
 on fs
     exec /sbin/fixboot.sh
     mount_all /fstab.mapphone_umts
-    swapon_all /fstab.mapphone_umts
 
 on post-fs
 # Enable PVR modules
