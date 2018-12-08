@@ -14,7 +14,7 @@
 #       write /sys/class/leds/green/brightness 1
 # 
 
-import /init.tiffany.rc
+import /tiffany/init.tiffany.rc
 
 # 
 
