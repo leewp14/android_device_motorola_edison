@@ -45,9 +45,6 @@ TARGET_KERNEL_VARIANT_CONFIG := mapphone_edison_defconfig
 
 TARGET_USES_CUSTOM_INITFILES := true
 
-# CM PowerHAL
-TARGET_POWERHAL_VARIANT := cm
-
 # Specific recovery settings
 TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/fstab.mapphone_umts
 
