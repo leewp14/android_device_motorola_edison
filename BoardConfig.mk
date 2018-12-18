@@ -26,6 +26,9 @@
 # inherit from the proprietary version
 -include vendor/motorola/edison/BoardConfigVendor.mk
 
+# Skip CVE-2017-13154 to fix media playback
+BOARD_SKIP_CVE_2017_13154 := true
+
 # Processor
 TARGET_BOOTLOADER_BOARD_NAME := edison
 
